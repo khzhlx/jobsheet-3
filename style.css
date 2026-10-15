@@ -1,0 +1,185 @@
+body {
+    background-color: #f4f7f6;
+    font-family: Arial, sans-serif;
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    background-color: #f4f7f6;
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+}
+
+.cv-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cv-header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.cv-card {
+    background-color: #ffffff;
+    padding: 24px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+skills-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill-item {
+    flex: 1;
+    min-width: 120px;
+    background-color: #e3faf2;
+    color: #0ca678;
+    font-weight: 600;
+    padding: 15px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+    .skills-container {
+        flex-direction: column;
+    }
+    body {
+        padding: 10px;
+    }
+    .cv-card {
+        padding: 15px;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* ====================================
+   STYLING DASAR (LIGHT MODE)
+==================================== */
+body {
+  background-color: #f4f7f6;
+  font-family: 'Poppins', sans-serif;
+  color: #333333;
+  margin: 0;
+  padding: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cv-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cv-header {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  transition: color 0.3s ease;
+}
+
+.cv-card {
+  background-color: #ffffff;
+  padding: 24px;
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skill-item {
+  flex: 1;
+  min-width: 120px;
+  background-color: #e3faf2;
+  color: #0ca678;
+  font-weight: 600;
+  padding: 15px;
+  text-align: center;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn-toggle {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #333333;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-toggle:hover {
+  background-color: #e0e0e0;
+}
+
+/* ====================================
+   RESPONSIVE DESIGN (MEDIA QUERIES)
+==================================== */
+@media (max-width: 600px) {
+  .skills-container {
+    flex-direction: column;
+  }
+  body {
+    padding: 10px;
+  }
+  .cv-card {
+    padding: 15px;
+  }
+}
+
+/* ====================================
+   TUGAS MANDIRI: DARK MODE
+==================================== */
+body.dark-theme {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+body.dark-theme .cv-card {
+  background-color: #2d2d2d;
+  border-color: #444444;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme p,
+body.dark-theme .cv-header {
+  color: #ffffff !important;
+}
+
+body.dark-theme .skill-item {
+  background-color: #1c3d37;
+  color: #12b886;
+}
+
+body.dark-theme .btn-toggle {
+  background-color: #333333;
+  color: #ffffff;
+  border-color: #555555;
+}
+
+body.dark-theme .btn-toggle:hover {
+  background-color: #555555;
+}
